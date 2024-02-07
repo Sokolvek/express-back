@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <% if(loggedIn === true) { %>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="/logout">Logout</a>
+            </li>
+        <% }else{ %>            
+            <li class="nav-item">
+                <a class="nav-link text-success" href="/login">Login</a>
+            </li>
+        <% } %>
+    </header>
+</body>
+</html>
