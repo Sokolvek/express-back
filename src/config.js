@@ -36,6 +36,6 @@ const ProductSchema = new mongoose.Schema({
     }
 })
 
-const collection = new mongoose.model("user", LoginSchema)
+const collection = new mongoose.model("users", LoginSchema)
 
 module.exports = collection
