@@ -37,5 +37,7 @@ const ProductSchema = new mongoose.Schema({
 })
 
 const collection = new mongoose.model("users", LoginSchema)
+const productCollection = new mongoose.model("products", ProductSchema)
 
-module.exports = collection
+module.exports = {collection,
+productCollection}
