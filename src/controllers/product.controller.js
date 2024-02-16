@@ -7,6 +7,7 @@ class Product{
             description: req.body.description,
             price:req.body.price
         }
+        console.log("dwawdwadwa", data)
         const product = await collection.productCollection.insertMany(data)
     
         res.json(product)
